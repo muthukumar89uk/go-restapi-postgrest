@@ -1,0 +1,11 @@
+{
+    "base_url_postgrest":"http://localhost:3000/todos",
+
+    "tasks_endpoint":"/tasks",
+    "task_by_id_endpoint":"/tasks/:id",
+
+    "content_type":"Content-Type",
+    "application_json":"application/json",
+    "authorization":"Authorization",
+    "token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidG9fZG9fdXNlciJ9.IHLQkh91ym8b4sZGp_pZ4Eu_EVokPyBaC3VvARvgH4U" 
+}

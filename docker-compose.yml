@@ -1,0 +1,22 @@
+version: "3"
+services:
+  db:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: job_posts
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+  postgrest:    
+    image: postgrest/postgrest
+    ports:
+      - "3000:3000"
+    environment:
+      PGRST_DB_URI: "postgres://postgres:password@host.docker.internal:5432/job_posts"
+      PGRST_DB_SCHEMAS : "api"
+      PGRST_DB_ANON_ROLE: "web_anon"
+      PGRST_JWT_SECRET: AtfxGAmuyz7IpHRudBI0WgGjZWgaRJt6
+    depends_on:
+      - db
+    restart: always
