@@ -101,11 +101,7 @@ This repository demonstrates how to set up and use PostgREST to create a RESTful
         ```
         DELETE http://localhost:3000/tasks/:id
         ```
-
-### Security and Access Control
-
-PostgREST allows you to define role-based access control (RBAC) using PostgreSQL roles and grants. You can create different roles for different levels of access and grant appropriate permissions on tables and columns.
-
+        
 ### Acknowledgements
 
 - [PostgREST](https://postgrest.org/)
